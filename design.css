@@ -1,4 +1,4 @@
-/* cyberpixie by klixa*/
+/* cyberfaerie by klixa*/
 /* Basic Body Structure */
 
 * {
@@ -109,26 +109,6 @@ a:hover {
 
 /* Topic Bar */
 
-#topic_bar {
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 400;
-	opacity: 0; /* Set by JavaScript */
-	color: #7980ff;
-	position: fixed;
-	text-align: center;
-	font-family: Monaco;
-	background: rgba(121,128,255,0.2);
-	padding: 2px 0.5em 3px;
-	border-bottom: 1px solid #7980ff;
-	
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(#521b92)), to(#521b92));
-	-webkit-transition: opacity 0.8s linear;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
 
 #topic_bar {
 	top: 0;
@@ -237,8 +217,8 @@ body div.line.selectedUser[highlight=false] {
 /* PRIVMSG */
 body div.line[ltype*=privmsg][highlight=false] {
  	padding: 2px 5px 2px 5px;
-	border-top: 0px solid transparent;
-	border-bottom: 0px solid transparent;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 	background-color: none;
 }
 
@@ -288,7 +268,7 @@ body div[ltype*=action] .sender {
 }
 
 body[dir=ltr] div[ltype*=action] .sender:before {
-	content: "✦";
+	content: "☆";
 	margin-right: 0.4em;
 	color: #9437ff;
 }
@@ -300,7 +280,7 @@ body[dir=ltr] div[ltype*=action] .sender:after {
 }
 
 body[dir=rtl] div[ltype*=action] .sender:before {
-	content: "✦";
+	content: "☆";
 	margin-left: 0.4em;
 	color: #9437ff;
 }
@@ -390,7 +370,7 @@ body[dir=ltr] div[ltype*=quit] .message:before {
 }
 
 body[dir=ltr] div[ltype*=nick] .message:before {
-	content:"✦";
+	content:"☆";
   	color:#9437ff;
   	/* margin-right: 0.4em; */
 }
@@ -410,7 +390,7 @@ body[dir=rtl] div[ltype*=quit] .message:before {
 }
 
 body[dir=rtl] div[ltype*=nick] .message:before {
-	content:"✦";
+	content:"☆";
   	color:#9437ff;
   	/* margin-left: 0.4em; */
 }
